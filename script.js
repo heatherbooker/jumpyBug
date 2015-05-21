@@ -1,4 +1,4 @@
-var image = '<img src="https://cutetheworld.files.wordpress.com/2008/11/cutebug.png" onclick="buttonHandler.jump()">';
+var image = '<img src="https://cutetheworld.files.wordpress.com/2008/11/cutebug.png" onclick="buttonHandler.jump(\'';
 
 var buttonHandler = {
 
@@ -50,7 +50,8 @@ var buttonHandler = {
     },
 
     moveBug: function(wordNewSquare) {
-        buttonHandler[wordNewSquare].innerHTML = image;
+        buttonHandler[wordNewSquare].innerHTML = image + wordNewSquare + '\')">';
+        console.log(buttonHandler[wordNewSquare].innerHTML);
     },
 
 };
