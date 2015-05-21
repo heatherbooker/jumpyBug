@@ -1,7 +1,10 @@
 td {
-  height: 40px;
-  width: 50px;
+  height: 45px;
+  width: 55px;
 }
 img {
   height: 30px;
+}
+img:hover {
+	cursor: pointer;
 }
